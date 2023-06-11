@@ -13,6 +13,7 @@ html {
 
 h1 {
   text-align: center;
+  margin-bottom: 10px;
   font-size: 120px;
   font-family: Copperplate, Papyrus, fantasy;
   color: aqua;
@@ -21,6 +22,8 @@ h1 {
 
 h2 {
   text-align: center;
+  margin-top: 1px;
+  margin-bottom: 5px;
   font-size: 40px;
   font-family: 'Times New Roman', Times, serif;
   color: #0f748a;
@@ -40,16 +43,16 @@ h2 {
 }
 
 .grid {
-  width: 600px;
-  height: 400px;
-  display: flex;
-  flex-wrap: wrap;
+  width: 1000px;
+  height: 450px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
   margin: 0 auto;
   cursor: url('./assets/mallet.png'), pointer;
 }
 
 .hole {
-  flex: 1 0 33.33%;
+  flex: 1 0 24%;
   overflow: hidden;
   position: relative;
 }
@@ -71,7 +74,7 @@ h2 {
 .dragon {
   /*background:url('./assets/mole.png') bottom center no-repeat;*/
   background:url('https://github.com/DGibson23/js-dev-final-capstone-starter-whack-a-mole/blob/main/assets/firedragon.png?raw=true') bottom center no-repeat;
-  background-size: 40%;
+  background-size: 47%;
   position: absolute;
   top: 100%;
   width: 100%;
@@ -83,5 +86,5 @@ h2 {
 
 .hole.show .dragon {
   top: 0;
-  /*transform: scale(1.1);*/
+ /* transform: scale(1.1);*/
 }
