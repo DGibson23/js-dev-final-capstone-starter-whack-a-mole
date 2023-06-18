@@ -5,55 +5,60 @@
 </head>
 
 <body>
-  
-  <div class = "header"> 
-    <h1 id="title"> Crush-A-Dragon </h1> 
+  <div class="header">
+    <h1 id="title"> Crush-A-Dragon </h1>
   </div>
-   
-   <div id="starterBox">   
-    <h2>Click <span> <button id="start"> START </button></span> to play but first Choose a difficulty:</h2> 
-     <div id="selectedDifficulty" >
-        <h2> <span> <button id="easySelector"> Easy </button></span> </h2>
-        <h2> <span> <button id="normalSelector"> Normal </button></span> </h2>
-        <h2> <span> <button id="hardSelector"> Hard </button></span> </h2>
-      </div>
-     <h2>score: <span id="score">0</span> </h2>
-     <h2><span id="timer">0</span> seconds left.</h2>
-   </div>
 
-    <div class="grid">
+  <div id="starterBox">
+    <h2>Click <span> <button id="start"> START </button></span> to play but first Choose a difficulty:</h2>
+    <div id="selectedDifficulty">
+      <h2> <span> <button id="easySelector"> Easy </button></span> </h2>
+      <h2> <span> <button id="normalSelector"> Normal </button></span> </h2>
+      <h2> <span> <button id="hardSelector"> Hard </button></span> </h2>
+    </div>
+    <h2>score: <span id="score">0</span> </h2>
+    <h2><span id="timer">0</span> seconds left.</h2>
+  </div>
+
+  <div class="grid">
     <div id="hole0" class="hole">
       <div id="dragon0" class="dragon"></div>
+      <div id="sprite0" class="sprite"></div>
     </div>
     <div id="hole1" class="hole">
       <div id="dragon1" class="dragon"></div>
-    </div>    
-    <!--TODO: Add the missing holes and moles. -->
-     <div id="hole2" class="hole">
+      <div id="sprite1" class="sprite"></div>
+    </div>
+    <div id="hole2" class="hole">
       <div id="dragon2" class="dragon"></div>
+      <div id="sprite2" class="sprite"></div>
     </div>
     <div id="hole3" class="hole">
       <div id="dragon3" class="dragon"></div>
+      <div id="sprite3" class="sprite"></div>
     </div>
     <div id="hole4" class="hole">
       <div id="dragon4" class="dragon"></div>
+      <div id="sprite4" class="sprite"></div>
     </div>
     <div id="hole5" class="hole">
       <div id="dragon5" class="dragon"></div>
+      <div id="sprite5" class="sprite"></div>
     </div>
     <div id="hole6" class="hole">
       <div id="dragon6" class="dragon"></div>
+      <div id="sprite6" class="sprite"></div>
     </div>
     <div id="hole7" class="hole">
       <div id="dragon7" class="dragon"></div>
+      <div id="sprite7" class="sprite"></div>
     </div>
     <div id="hole8" class="hole">
-     <div id="dragon8" class="dragon"></div>
+      <div id="dragon8" class="dragon"></div>
+      <div id="sprite8" class="sprite"></div>
     </div>
-   </div>
-
- 
-
+  </div>
   <script src="./src/index.js"></script>
 </body>
+
 </html>
