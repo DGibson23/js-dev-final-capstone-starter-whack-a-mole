@@ -30,6 +30,7 @@ describe("US-01: Basic Game Structure", () => {
   it("has 9 holes <div class='hole'>", async () => {
     const holes = await page.evaluate(() => {
       const h = document.querySelectorAll(".hole");
+      console.log("HHH " + h);
       return h.length;
      });
     expect(holes).not.toBeNull();

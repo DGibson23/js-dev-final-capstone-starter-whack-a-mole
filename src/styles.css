@@ -1,13 +1,12 @@
 html {
-  /*background: url('./assets/Sky.jpg') no-repeat center center fixed;*/
-  /* background: url('https://github.com/Thinkful-Ed/js-dev-final-capstone-starter/blob/main/assets/background.png?raw=true') no-repeat center center fixed; */
-  background: url('https://github.com/DGibson23/js-dev-final-capstone-starter-whack-a-mole/blob/main/assets/Sky.jpg?raw=true') no-repeat center center fixed;
-   box-sizing: border-box;
+  background: url("https://github.com/DGibson23/js-dev-final-capstone-starter-whack-a-mole/blob/main/assets/Sky.jpg?raw=true")
+    no-repeat center center fixed;
+  box-sizing: border-box;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  z-index:0;
+  z-index: 0;
   overflow: hidden;
 }
 
@@ -20,33 +19,31 @@ h1 {
   -webkit-text-stroke: 2px black;
 }
 
-
-
 h2 {
   text-align: center;
   margin-top: 1px;
   margin-bottom: 5px;
   font-size: 40px;
-  font-family: 'Times New Roman', Times, serif;
+  font-family: "Times New Roman", Times, serif;
   color: #0f748a;
   -webkit-text-stroke: 1.5px aqua;
 }
 
 body {
-display: flex;
-flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 #start {
-    text-align: center;
-    font-size: 30px;
-    background-color: black;
-    color: aqua;
+  text-align: center;
+  font-size: 30px;
+  background-color: black;
+  color: aqua;
 }
 
-#timer{
-    color: aqua;
-    -webkit-text-stroke: 2px black;
+#timer {
+  color: aqua;
+  -webkit-text-stroke: 2px black;
 }
 
 .grid {
@@ -55,7 +52,7 @@ flex-direction: column;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   margin: 0 auto;
-  cursor: url('./assets/mallet.png'), pointer;
+  cursor: url("../assets/mallet.png"), pointer;
 }
 
 .hole {
@@ -66,51 +63,48 @@ flex-direction: column;
 
 .hole:after {
   display: block;
-  /*background: url("./assets/blackmist.png") bottom center no-repeat;*/
-  background: url("https://github.com/DGibson23/js-dev-final-capstone-starter-whack-a-mole/blob/main/assets/blackmist.png?raw=true") bottom center no-repeat;
-  background-size:contain;
-  content:'';
+  background: url("https://github.com/DGibson23/js-dev-final-capstone-starter-whack-a-mole/blob/main/assets/blackmist.png?raw=true")
+    bottom center no-repeat;
+  background-size: contain;
+  content: "";
   width: 100%;
   height: 100%;
   position: absolute;
   bottom: -40%;
   z-index: 2;
-  pointer-events:none;
+  pointer-events: none;
 }
 
 .dragon {
-  /*background:url('./assets/mole.png') bottom center no-repeat;*/
-  background:url('https://github.com/DGibson23/js-dev-final-capstone-starter-whack-a-mole/blob/main/assets/firedragon.png?raw=true') bottom center no-repeat;
+  background: url("https://github.com/DGibson23/js-dev-final-capstone-starter-whack-a-mole/blob/main/assets/firedragon.png?raw=true")
+    bottom center no-repeat;
   background-size: 47%;
   position: absolute;
   top: 100%;
   width: 100%;
   height: 100%;
-  /*transition: transform 0.5s;*/
   transition: all 1s;
-  pointer-events:auto;
+  pointer-events: auto;
 }
 
-.sprite{
-  background:url('https://github.com/DGibson23/js-dev-final-capstone-starter-whack-a-mole/blob/main/assets/IceDragon.png?raw=true') bottom center no-repeat;
+.sprite {
+  background: url("https://github.com/DGibson23/js-dev-final-capstone-starter-whack-a-mole/blob/main/assets/IceDragon.png?raw=true")
+    bottom center no-repeat;
   background-size: 32%;
   position: absolute;
   top: 100%;
   width: 100%;
   height: 100%;
-  /*transition: transform 0.5s;*/
   transition: all 1s;
-  pointer-events:auto;
+  pointer-events: auto;
 }
 
 .hole.show .dragon {
   top: 0;
- /* transform: scale(1.1);*/
 }
 
 .hole.show-sprite .sprite {
   top: 0;
- /* transform: scale(1.1);*/
 }
 
 #selectedDifficulty {
@@ -124,17 +118,18 @@ flex-direction: column;
   height: 1em;
   font-size: 30px;
   color: white;
-  }
+}
 
-#starterBox{
+#starterBox {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
 }
 
-#easySelector, #normalSelector, #hardSelector {
-background-color: black;
-font-size: 20px;
+#easySelector,
+#normalSelector,
+#hardSelector {
+  background-color: black;
+  font-size: 20px;
 }
-
